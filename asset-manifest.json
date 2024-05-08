@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/2024-feb-react-browser-parking-lot/static/css/main.964fdded.css",
+    "main.js": "/2024-feb-react-browser-parking-lot/static/js/main.67342d7b.js",
+    "index.html": "/2024-feb-react-browser-parking-lot/index.html",
+    "main.964fdded.css.map": "/2024-feb-react-browser-parking-lot/static/css/main.964fdded.css.map",
+    "main.67342d7b.js.map": "/2024-feb-react-browser-parking-lot/static/js/main.67342d7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.67342d7b.js"
+  ]
+}
