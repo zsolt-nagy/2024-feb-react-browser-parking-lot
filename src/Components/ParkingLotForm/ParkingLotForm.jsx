@@ -9,7 +9,7 @@ const PRIORITIES = {
     High: 'High',
 };
 
-export default function ParkingLotForm() {
+export default function ParkingLotForm({ addItem }) {
 
     const [date, setDate] = useState('');
     const [link, setLink] = useState('');
@@ -34,10 +34,21 @@ export default function ParkingLotForm() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(date, link, description, priority);
+
+        // 2024-05-22 ---> 05/22/2024
+        const [y, M, d] = date.split('-');
+        const formattedDate = `${M}/${d}/${y}`;
+
+        addItem(formattedDate, priority, link, description);
+        clearForm();
     }
 
-
+    function clearForm() {
+        setDate('');
+        setLink('');
+        setDescription('');
+        setPriority(PRIORITIES.Medium);        
+    }
 
     return (
         <Form 
