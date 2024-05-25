@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ParkingLotForm from "./Components/ParkingLotForm/ParkingLotForm";
 import ParkingLotList from "./Components/ParkingLotList/ParkingLotList";
+import Timer from "./Components/Timer/Timer";
 import "./App.css";
 import { nanoid } from "nanoid";
 
@@ -45,6 +46,7 @@ function App() {
             <header>
                 <h1>Browser Parking Lot</h1>
                 <p>Send most of your browser tabs into retirement.</p>
+                <Timer />
             </header>
             <main>
                 <ParkingLotForm addItem={addItem} />
