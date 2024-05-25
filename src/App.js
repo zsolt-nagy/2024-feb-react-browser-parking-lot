@@ -5,22 +5,7 @@ import "./App.css";
 import { nanoid } from "nanoid";
 
 function App() {
-    let [parkingLotItems, setParkingLotItems] = useState([
-        {
-            id: nanoid(),
-            date: "06/27/2023",
-            priority: "Low",
-            link: "https://google.com/",
-            description: "Ultimate source of truth.",
-        },
-        {
-            id: nanoid(),
-            date: "08/27/2023",
-            priority: "Medium",
-            link: "https://react.dev/",
-            description: "React documentation and tutorial",
-        },
-    ]);
+    let [parkingLotItems, setParkingLotItems] = useState([]);
 
     function addItem(date, priority, link, description) {
         setParkingLotItems((oldItems) => [
