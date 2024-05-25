@@ -3,10 +3,10 @@ import ParkingLotItem from './ParkingLotItem';
 
 import './ParkingLot.css';
 
-export default function ParkingLotList({ parkingLotItems }) {
+export default function ParkingLotList({ parkingLotItems, deleteItem }) {
 
     const ParkingLotItemsJsx = parkingLotItems.map( item => 
-        <ParkingLotItem key={item.id} {...item} />
+        <ParkingLotItem key={item.id} {...item} deleteItem={deleteItem} />
     );
 
     return (
